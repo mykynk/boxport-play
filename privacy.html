@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boxport Privacy Policy</title>
+<meta name="description" content="How the Boxport game handles your data: anonymous cloud save, Firebase analytics and crash reports, optional rewarded ads (AdMob) and in-app purchases (RevenueCat).">
+<link rel="icon" href="favicon.png">
+<style>
+:root {
+  --bg: #fbf8f3; --fg: #24211d; --muted: #6b645b; --line: #e6dfd4;
+  --card: #ffffff; --accent: #c8650a; --head: #f3ece1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17150f; --fg: #ece6dc; --muted: #a59d90; --line: #353028;
+    --card: #1f1c16; --accent: #f2a04f; --head: #29251d;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.brand { font-weight: 700; font-size: 18px; color: var(--fg); text-decoration: none; }
+nav.lang a { margin-left: 12px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 32px 0 4px; }
+.updated { color: var(--muted); margin: 0 0 24px; font-size: 14px; }
+h2 { font-size: 21px; margin: 36px 0 8px; padding-top: 8px; }
+h3 { font-size: 17px; margin: 24px 0 6px; }
+p, ul, ol { margin: 0 0 12px; }
+ul, ol { padding-left: 22px; }
+li { margin: 4px 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+.table { overflow-x: auto; margin: 8px 0 16px; }
+table { border-collapse: collapse; width: 100%; background: var(--card); font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border: 1px solid var(--line); }
+th { background: var(--head); font-weight: 600; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 0; }
+footer { color: var(--muted); font-size: 14px; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<header class="top">
+  <a class="brand" href="./">Boxport</a>
+  <nav class="lang"><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
+</header>
+
+<section id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 18 October 2026</p>
+<p>This policy covers the game <strong>Boxport</strong> for iOS and Android, and its free web preview, published by <strong>Appnify (AppNify Software)</strong> ("we", "us"). We are responsible for the data described here. Contact: <strong><a href="mailto:appnify.co@gmail.com">appnify.co@gmail.com</a></strong>.</p>
+<h2 id="in-short">In short</h2>
+<ul><li>There is no sign-up. We never ask for your name, email, phone number, contacts, photos or precise location.</li><li>The game creates an <strong>anonymous ID</strong> so it can back up your save to the cloud and group crash reports.</li><li>We use <strong>Google Firebase</strong> for analytics, crash reports and the cloud save.</li><li><strong>Rewarded video ads</strong> (Google AdMob) play only when you tap to watch one for an in-game reward. No banners, no ads that interrupt play.</li><li><strong>In-app purchases</strong> are paid through the App Store or Google Play. <strong>RevenueCat</strong> records them so we can deliver and restore what you bought. We never see your payment details.</li><li>We do not sell your personal data.</li></ul>
+<h2 id="your-anonymous-account">Your anonymous account</h2>
+<p>The first time the game goes online, Firebase Authentication (Google) creates an <strong>anonymous user ID</strong>: a random string that is not linked to your name, email, phone number, Apple ID or Google account. It is kept on your device and used for two things: storing your cloud save, and as the user ID on crash reports.</p>
+<p>The game also creates a random <strong>install id</strong> on your device. It is saved with your cloud save so the game can tell whether a cloud copy came from this device, and you can use it to identify your data when you ask us to delete it (see <a href="#delete">Deleting your data</a>).</p>
+<p>There is no password and no way to sign in to the same anonymous account from another device. After you uninstall the game, the connection between you and that account is normally lost.</p>
+<h2 id="what-we-collect-and-why">What we collect and why</h2>
+<h3>Cloud save: Firebase Cloud Firestore (Google)</h3>
+<ul><li><strong>What:</strong> your game save (depot, money, staff, story progress and other game state), the in-game day and tier, the platform and OS version (for example "android 14"), the install id and the time of the last save.</li><li><strong>Why:</strong> to keep a backup of your progress and offer to restore it if the copy on your device is older or missing.</li><li><strong>When:</strong> automatically while you play online, at most once a minute.</li><li><strong>Kept:</strong> until you ask us to delete it.</li></ul>
+<h3>Analytics: Google Analytics for Firebase</h3>
+<ul><li><strong>Game events we send:</strong> for example a finished day (day, tier, earnings, stars), a mini-game started or finished (station, score, duration, stars), tutorial steps, story chapters, promotions, new branches, daily challenges, rewarded ads offered and watched, stamps earned and spent, and purchase steps (which product and what it granted, never payment details).</li><li><strong>Collected automatically by the SDK:</strong> an app instance ID, device model, OS and app version, language, approximate country or region (worked out from your IP address), sessions and first launch. On Android it can also read the advertising ID; on iOS only if you allow tracking.</li><li><strong>Why:</strong> to learn which parts of the game are fun, too hard or broken, and to balance the game economy.</li><li><strong>Kept:</strong> event-level data for up to 14 months, then deleted by Google.</li><li>A switch to turn analytics off is coming to Settings.</li></ul>
+<h3>Crash reports: Firebase Crashlytics</h3>
+<ul><li><strong>What:</strong> when the released game crashes or hits an error: the error and stack trace, device model, OS and app version, free memory and storage, a Crashlytics installation ID, short technical notes from the game (for example "sign-in attempt failed") and your anonymous user ID.</li><li><strong>Why:</strong> to find and fix bugs.</li><li><strong>Kept:</strong> 90 days.</li></ul>
+<h3>Rewarded ads: Google AdMob (iOS and Android only)</h3>
+<ul><li><strong>When:</strong> an ad plays only after you tap a button that offers a reward, such as doubling the day's bonus. The game loads one ad in advance so it is ready.</li><li><strong>What Google collects:</strong> the advertising ID (Android advertising ID; on iOS the IDFA only if you allow tracking), your IP address and the approximate location derived from it, device and app information, and how you interact with ads.</li><li><strong>Why:</strong> to show and measure ads, limit how often you see the same ad, prevent fraud and, where you allow it, personalise ads.</li><li><strong>Ad content</strong> is limited to family-safe ("G" rated) ads.</li><li><strong>EEA, UK and Switzerland:</strong> Google's consent form asks for your choice before any ad is requested.</li><li><strong>iOS:</strong> you may see Apple's "Allow tracking?" prompt. If you don't allow tracking (or are never asked), the IDFA is not used.</li><li>How Google uses this data: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></li></ul>
+<h3>In-app purchases: App Store, Google Play and RevenueCat</h3>
+<ul><li><strong>Payment</strong> is handled entirely by Apple or Google. We never receive your card details, name or billing address.</li><li><strong>RevenueCat</strong> (our purchase service) receives the store receipt (product, price, currency, date, transaction ID, store country), a random RevenueCat user ID created on your device, your device type, OS and app version, and your IP address.</li><li><strong>Why:</strong> to verify purchases, deliver and restore what you bought (for example Boxport Pro), prevent fraud and handle refunds.</li><li><strong>Kept:</strong> as long as needed to provide your purchases and for accounting. Apple and Google keep their own records.</li><li>RevenueCat's policy: <a href="https://www.revenuecat.com/privacy">www.revenuecat.com/privacy</a></li></ul>
+<h3>Game Center and Google Play Games</h3>
+<p>If you are signed in to Game Center (iOS) or Google Play Games (Android), the game posts your scores to leaderboards and unlocks achievements on that profile. Apple or Google run that profile under their own privacy policies; your gamer name and scores may be visible to other players according to your settings there. We don't receive your Apple ID or Google account.</p>
+<h3>Stays on your device</h3>
+<ul><li><strong>Game data:</strong> your progress, settings (language, sound, controls, reminders), stamp balance, the install id and similar preferences are kept in the app's private storage. Your device's own backup (iCloud, Google) may include them under Apple's or Google's policies.</li><li><strong>Notifications</strong> are local: the game schedules reminders on your device (Koli's check-in, waiting trucks, daily reward). There is no push server and no notification token. The game asks for permission on your second in-game day or when you switch a reminder on. You can turn reminders off in Settings or in your device settings.</li><li><strong>Sharing:</strong> the share button draws a picture of your day report (day, tier, earnings, deliveries, stars, reputation) and opens your device's share sheet. Nothing leaves your device unless you pick an app, and we don't receive it.</li><li><strong>Store rating:</strong> at most once, the game may show Apple's or Google's own rating prompt. We only see what you publish on the store.</li><li><strong>Motion sensor:</strong> if you choose tilt steering, the accelerometer is read live to steer the vehicle. Readings are not stored or sent.</li></ul>
+<h2 id="what-we-dont-collect">What we don't collect</h2>
+<p>Name, email address, phone number, postal address, contacts, photos, camera, microphone, precise location, messages or browsing history. Boxport has no chat and no user-generated content. We don't sell personal data, and apart from the advertising data Google AdMob collects as described above, we don't share it for anyone else's marketing.</p>
+<h2 id="who-receives-data">Who receives data</h2>
+<div class="table"><table>
+<thead><tr><th>Company</th><th>Role</th><th>Data</th></tr></thead>
+<tbody>
+<tr><td>Google (Firebase)</td><td>Service provider</td><td>Anonymous account, cloud save, analytics, crash reports</td></tr>
+<tr><td>Google (AdMob)</td><td>Advertising partner</td><td>Advertising ID, IP address, device info, ad interactions</td></tr>
+<tr><td>RevenueCat, Inc.</td><td>Service provider</td><td>Purchase receipts, RevenueCat user ID, device info</td></tr>
+<tr><td>Apple, Google (stores, Game Center, Play Games)</td><td>Platform, when you use it</td><td>Payments, ratings, leaderboard scores, achievements</td></tr>
+</tbody></table></div>
+<p>We may also disclose data when the law requires it, or to a company that takes over the game, which would then have to follow this policy. These companies may process data in the United States and other countries, under safeguards such as the EU Standard Contractual Clauses.</p>
+<h2 id="legal-basis-eea-uk">Legal basis (EEA, UK)</h2>
+<ul><li><strong>Contract:</strong> cloud save, purchases.</li><li><strong>Legitimate interests:</strong> analytics, crash reports, fraud prevention, non-personalised ads.</li><li><strong>Consent:</strong> personalised ads and use of the advertising ID where the law requires consent.</li></ul>
+<h2 id="how-long-we-keep-data">How long we keep data</h2>
+<div class="table"><table>
+<thead><tr><th>Data</th><th>Kept</th></tr></thead>
+<tbody>
+<tr><td>Cloud save and anonymous account</td><td>Until you ask us to delete them</td></tr>
+<tr><td>Analytics events</td><td>Up to 14 months</td></tr>
+<tr><td>Crash reports</td><td>90 days</td></tr>
+<tr><td>Purchase records (RevenueCat)</td><td>As long as needed for your purchases and accounting</td></tr>
+<tr><td>Ad data (Google)</td><td>Under Google's policies</td></tr>
+<tr><td>Data on your device</td><td>Until you reset progress in Settings or uninstall</td></tr>
+</tbody></table></div>
+<h2 id="your-choices-and-rights">Your choices and rights</h2>
+<ul><li><strong>Ads are optional:</strong> if you never tap an ad button, no ad is shown (the ad SDK still starts and keeps one ad loaded, as described above).</li><li><strong>Advertising ID:</strong> reset or delete it in your device settings (Android: Settings › Privacy › Ads; iOS: Settings › Privacy &amp; Security › Tracking).</li><li><strong>Ad consent (EEA, UK, Switzerland):</strong> to change your choice, use the ad privacy options (coming to Settings) or reinstall the game to see the consent form again.</li><li><strong>Notifications:</strong> Settings in the game or on your device.</li><li><strong>Local data:</strong> reset progress in Settings, or uninstall.</li><li><strong>Your rights:</strong> depending on where you live (for example the GDPR in the EU and UK, or KVKK Law No. 6698 in Türkiye), you can ask to access, correct or delete your data, object to its use, and complain to your data protection authority. Email us; we answer within 30 days.</li></ul>
+<h2 id="delete">Deleting your data</h2>
+<ol><li>In Boxport, open <strong>Settings › About</strong> and note your <strong>install id</strong>. (If your version doesn't show it yet, it is coming in an update. Until then, tell us your device model, roughly when you last played and your in-game day and tier, and we will try to find your save.)</li><li>Email <strong><a href="mailto:appnify.co@gmail.com">appnify.co@gmail.com</a></strong> with the subject "Boxport data deletion" and your install id. If you also want your purchase records removed, add the order number from your App Store or Google Play receipt.</li><li>Within 30 days we delete your cloud save and anonymous account, and ask RevenueCat to delete the purchase records we can match. Analytics events and crash reports are not stored under your install id; they are deleted automatically after the periods above.</li></ol>
+<p>Uninstalling the game removes the data on your device but not the cloud copy.</p>
+<h2 id="children">Children</h2>
+<p>Boxport is meant for players aged 13 and over and is not directed at children. We don't knowingly collect personal data from children under 13 (or the higher age set by law in your country). If you believe a child has used the game, email us and we will delete their cloud save. Ads in Boxport are limited to family-safe content.</p>
+<h2 id="web-preview">Web preview</h2>
+<p>The free web preview at <a href="https://mykynk.github.io/boxport-play/">mykynk.github.io/boxport-play</a> uses the same Firebase analytics, anonymous account and cloud save, stored in your browser's storage. It has no ads and no purchases.</p>
+<h2 id="changes">Changes</h2>
+<p>When anything here changes, we update this page and the date at the top before the version that needs it is released.</p>
+<h2 id="contact">Contact</h2>
+<p>Appnify (AppNify Software) · <strong><a href="mailto:appnify.co@gmail.com">appnify.co@gmail.com</a></strong></p>
+</section>
+
+<hr>
+
+<section id="tr" lang="tr">
+<h1>Gizlilik Politikası</h1>
+<p class="updated">Son güncelleme: 18 Ekim 2026</p>
+<p>Bu politika, <strong>Appnify (AppNify Software)</strong> ("biz") tarafından yayımlanan iOS ve Android oyunu <strong>Boxport</strong>'u ve ücretsiz web önizlemesini kapsar. Burada anlatılan verilerden (KVKK kapsamında veri sorumlusu olarak) biz sorumluyuz. İletişim: <strong><a href="mailto:appnify.co@gmail.com">appnify.co@gmail.com</a></strong>.</p>
+<h2 id="tr-kisaca">Kısaca</h2>
+<ul><li>Kayıt yok. Adını, e-postanı, telefon numaranı, rehberini, fotoğraflarını veya kesin konumunu asla istemeyiz.</li><li>Oyun, kaydını buluta yedekleyebilmek ve çökme raporlarını gruplayabilmek için <strong>anonim bir kimlik</strong> oluşturur.</li><li>Analitik, çökme raporları ve bulut kaydı için <strong>Google Firebase</strong> kullanırız.</li><li><strong>Ödüllü video reklamlar</strong> (Google AdMob) yalnızca oyun içi bir ödül karşılığında izlemek için dokunduğunda oynar. Banner yok, oyunu bölen reklam yok.</li><li><strong>Uygulama içi satın almaların</strong> ödemesi App Store veya Google Play üzerinden yapılır. Aldıklarını teslim edip geri yükleyebilmemiz için <strong>RevenueCat</strong> bunları kaydeder. Ödeme bilgilerini asla görmeyiz.</li><li>Kişisel verilerini satmayız.</li></ul>
+<h2 id="tr-anonim-hesabin">Anonim hesabın</h2>
+<p>Oyun ilk kez internete bağlandığında Firebase Authentication (Google) bir <strong>anonim kullanıcı kimliği</strong> oluşturur: adına, e-postana, telefon numarana, Apple kimliğine veya Google hesabına bağlı olmayan rastgele bir dizi. Cihazında saklanır ve iki iş için kullanılır: bulut kaydını saklamak ve çökme raporlarında kullanıcı kimliği olarak.</p>
+<p>Oyun ayrıca cihazında rastgele bir <strong>kurulum kimliği</strong> (install id) oluşturur. Bu kimlik bulut kaydınla birlikte saklanır; böylece oyun bulut kopyasının bu cihazdan gelip gelmediğini anlar. Verilerinin silinmesini istediğinde de verilerini bu kimlikle belirtebilirsin (bkz. <a href="#tr-delete">Verilerini silme</a>).</p>
+<p>Şifre yoktur ve aynı anonim hesaba başka bir cihazdan giriş yapmanın bir yolu yoktur. Oyunu kaldırdığında seninle o hesap arasındaki bağ normalde kaybolur.</p>
+<h2 id="tr-ne-topluyoruz-ve-neden">Ne topluyoruz ve neden</h2>
+<h3>Bulut kaydı: Firebase Cloud Firestore (Google)</h3>
+<ul><li><strong>Ne:</strong> oyun kaydın (depon, paran, personelin, hikâye ilerlemen ve diğer oyun durumu), oyun içi gün ve kademe, platform ve işletim sistemi sürümü (örneğin "android 14"), kurulum kimliği ve son kaydın zamanı.</li><li><strong>Neden:</strong> ilerlemenin bir yedeğini tutmak ve cihazındaki kopya daha eskiyse ya da kaybolduysa geri yüklemeyi önermek.</li><li><strong>Ne zaman:</strong> çevrimiçi oynarken otomatik olarak, en fazla dakikada bir.</li><li><strong>Saklama:</strong> sen silinmesini isteyene kadar.</li></ul>
+<h3>Analitik: Google Analytics for Firebase</h3>
+<ul><li><strong>Gönderdiğimiz oyun olayları:</strong> örneğin biten bir gün (gün, kademe, kazanç, yıldız), başlayan veya biten bir mini oyun (istasyon, puan, süre, yıldız), eğitim adımları, hikâye bölümleri, terfiler, yeni şubeler, günlük meydan okumalar, önerilen ve izlenen ödüllü reklamlar, kazanılan ve harcanan pullar ve satın alma adımları (hangi ürün ve ne kazandırdığı; ödeme bilgisi asla).</li><li><strong>SDK'nın otomatik topladıkları:</strong> bir uygulama örneği kimliği, cihaz modeli, işletim sistemi ve uygulama sürümü, dil, yaklaşık ülke veya bölge (IP adresinden çıkarılır), oturumlar ve ilk açılış. Android'de reklam kimliğini de okuyabilir; iOS'ta yalnızca izlemeye izin verirsen.</li><li><strong>Neden:</strong> oyunun hangi bölümlerinin eğlenceli, fazla zor veya bozuk olduğunu öğrenmek ve oyun ekonomisini dengelemek.</li><li><strong>Saklama:</strong> olay düzeyindeki veriler en fazla 14 ay, sonra Google tarafından silinir.</li><li>Analitiği kapatmak için bir anahtar yakında Ayarlar'a geliyor.</li></ul>
+<h3>Çökme raporları: Firebase Crashlytics</h3>
+<ul><li><strong>Ne:</strong> yayımlanmış oyun çöktüğünde veya bir hatayla karşılaştığında: hata ve yığın izi, cihaz modeli, işletim sistemi ve uygulama sürümü, boş bellek ve depolama, bir Crashlytics kurulum kimliği, oyundan kısa teknik notlar (örneğin "giriş denemesi başarısız") ve anonim kullanıcı kimliğin.</li><li><strong>Neden:</strong> hataları bulup düzeltmek.</li><li><strong>Saklama:</strong> 90 gün.</li></ul>
+<h3>Ödüllü reklamlar: Google AdMob (yalnızca iOS ve Android)</h3>
+<ul><li><strong>Ne zaman:</strong> reklam yalnızca, günün bonusunu ikiye katlamak gibi bir ödül sunan bir düğmeye dokunduktan sonra oynar. Oyun, hazır olsun diye bir reklamı önceden yükler.</li><li><strong>Google'ın topladıkları:</strong> reklam kimliği (Android reklam kimliği; iOS'ta IDFA yalnızca izlemeye izin verirsen), IP adresin ve ondan çıkarılan yaklaşık konum, cihaz ve uygulama bilgileri ve reklamlarla etkileşimin.</li><li><strong>Neden:</strong> reklamları göstermek ve ölçmek, aynı reklamı ne sıklıkla gördüğünü sınırlamak, dolandırıcılığı önlemek ve izin verdiğin yerde reklamları kişiselleştirmek.</li><li><strong>Reklam içeriği</strong> aile dostu ("G" derecelendirmeli) reklamlarla sınırlıdır.</li><li><strong>AEA, Birleşik Krallık ve İsviçre:</strong> herhangi bir reklam istenmeden önce Google'ın onay formu tercihini sorar.</li><li><strong>iOS:</strong> Apple'ın "İzlemeye izin verilsin mi?" sorusunu görebilirsin. İzin vermezsen (veya hiç sorulmazsan) IDFA kullanılmaz.</li><li>Google'ın bu verileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites?hl=tr">policies.google.com/technologies/partner-sites</a></li></ul>
+<h3>Uygulama içi satın almalar: App Store, Google Play ve RevenueCat</h3>
+<ul><li><strong>Ödeme</strong> tamamen Apple veya Google tarafından yapılır. Kart bilgilerini, adını veya fatura adresini asla almayız.</li><li><strong>RevenueCat</strong> (satın alma hizmetimiz) mağaza makbuzunu (ürün, fiyat, para birimi, tarih, işlem kimliği, mağaza ülkesi), cihazında oluşturulan rastgele bir RevenueCat kullanıcı kimliğini, cihaz türünü, işletim sistemi ve uygulama sürümünü ve IP adresini alır.</li><li><strong>Neden:</strong> satın almaları doğrulamak, aldıklarını (örneğin Boxport Pro) teslim etmek ve geri yüklemek, dolandırıcılığı önlemek ve iadeleri yönetmek.</li><li><strong>Saklama:</strong> satın almalarını sağlamak ve muhasebe için gerektiği sürece. Apple ve Google kendi kayıtlarını tutar.</li><li>RevenueCat'in politikası: <a href="https://www.revenuecat.com/privacy">www.revenuecat.com/privacy</a></li></ul>
+<h3>Game Center ve Google Play Oyunlar</h3>
+<p>Game Center'da (iOS) veya Google Play Oyunlar'da (Android) oturum açtıysan oyun puanlarını liderlik tablolarına gönderir ve o profilde başarımların kilidini açar. Bu profili Apple veya Google kendi gizlilik politikalarına göre yönetir; oyuncu adın ve puanların oradaki ayarlarına göre diğer oyunculara görünebilir. Apple kimliğini veya Google hesabını almayız.</p>
+<h3>Cihazında kalanlar</h3>
+<ul><li><strong>Oyun verileri:</strong> ilerlemen, ayarların (dil, ses, kontroller, hatırlatıcılar), pul bakiyen, kurulum kimliği ve benzeri tercihler uygulamanın özel depolama alanında tutulur. Cihazının kendi yedeklemesi (iCloud, Google) bunları Apple'ın veya Google'ın politikalarına göre yedeğe dahil edebilir.</li><li><strong>Bildirimler</strong> yereldir: oyun hatırlatıcıları cihazında planlar (Koli'nin uğraması, bekleyen tırlar, günlük ödül). Push sunucusu ve bildirim jetonu yoktur. Oyun izni ikinci oyun gününde veya bir hatırlatıcıyı açtığında ister. Hatırlatıcıları Ayarlar'dan veya cihaz ayarlarından kapatabilirsin.</li><li><strong>Paylaşma:</strong> paylaş düğmesi gün raporunun bir resmini çizer (gün, kademe, kazanç, teslimat, yıldız, itibar) ve cihazının paylaşım menüsünü açar. Bir uygulama seçmedikçe hiçbir şey cihazından çıkmaz ve biz onu almayız.</li><li><strong>Mağaza puanı:</strong> oyun en fazla bir kez Apple'ın veya Google'ın kendi puanlama penceresini gösterebilir. Yalnızca mağazada yayımladığın şeyi görürüz.</li><li><strong>Hareket sensörü:</strong> eğimle direksiyonu seçersen aracı yönlendirmek için ivmeölçer anlık okunur. Okumalar saklanmaz ve gönderilmez.</li></ul>
+<h2 id="tr-toplamadiklarimiz">Toplamadıklarımız</h2>
+<p>Ad, e-posta adresi, telefon numarası, posta adresi, rehber, fotoğraflar, kamera, mikrofon, kesin konum, mesajlar veya tarama geçmişi. Boxport'ta sohbet ve kullanıcı içeriği yoktur. Kişisel verileri satmayız ve Google AdMob'un yukarıda anlatıldığı gibi topladığı reklam verileri dışında başkalarının pazarlaması için paylaşmayız.</p>
+<h2 id="tr-verileri-kimler-alir">Verileri kimler alır</h2>
+<div class="table"><table>
+<thead><tr><th>Şirket</th><th>Rolü</th><th>Veriler</th></tr></thead>
+<tbody>
+<tr><td>Google (Firebase)</td><td>Hizmet sağlayıcı</td><td>Anonim hesap, bulut kaydı, analitik, çökme raporları</td></tr>
+<tr><td>Google (AdMob)</td><td>Reklam ortağı</td><td>Reklam kimliği, IP adresi, cihaz bilgisi, reklam etkileşimleri</td></tr>
+<tr><td>RevenueCat, Inc.</td><td>Hizmet sağlayıcı</td><td>Satın alma makbuzları, RevenueCat kullanıcı kimliği, cihaz bilgisi</td></tr>
+<tr><td>Apple, Google (mağazalar, Game Center, Play Oyunlar)</td><td>Kullandığında platform</td><td>Ödemeler, puanlar, liderlik tablosu puanları, başarımlar</td></tr>
+</tbody></table></div>
+<p>Yasanın gerektirdiği durumlarda veya oyunu devralan bir şirkete de veri aktarabiliriz; o şirket bu politikaya uymak zorunda olur. Bu şirketler verileri ABD'de ve başka ülkelerde, AB Standart Sözleşme Maddeleri gibi güvencelerle işleyebilir. Bu, KVKK anlamında yurt dışına veri aktarımıdır.</p>
+<h2 id="tr-hukuki-sebep">Hukuki sebep</h2>
+<ul><li><strong>Sözleşmenin ifası:</strong> bulut kaydı, satın almalar.</li><li><strong>Meşru menfaat:</strong> analitik, çökme raporları, dolandırıcılığın önlenmesi, kişiselleştirilmemiş reklamlar.</li><li><strong>Açık rıza:</strong> kişiselleştirilmiş reklamlar ve yasanın rıza istediği yerlerde reklam kimliğinin kullanımı.</li></ul>
+<h2 id="tr-verileri-ne-kadar-sakliyoruz">Verileri ne kadar saklıyoruz</h2>
+<div class="table"><table>
+<thead><tr><th>Veri</th><th>Saklama</th></tr></thead>
+<tbody>
+<tr><td>Bulut kaydı ve anonim hesap</td><td>Sen silinmesini isteyene kadar</td></tr>
+<tr><td>Analitik olayları</td><td>En fazla 14 ay</td></tr>
+<tr><td>Çökme raporları</td><td>90 gün</td></tr>
+<tr><td>Satın alma kayıtları (RevenueCat)</td><td>Satın almaların ve muhasebe için gerektiği sürece</td></tr>
+<tr><td>Reklam verileri (Google)</td><td>Google'ın politikalarına göre</td></tr>
+<tr><td>Cihazındaki veriler</td><td>Ayarlar'dan ilerlemeni sıfırlayana veya oyunu kaldırana kadar</td></tr>
+</tbody></table></div>
+<h2 id="tr-seceneklerin-ve-haklarin">Seçeneklerin ve hakların</h2>
+<ul><li><strong>Reklamlar isteğe bağlıdır:</strong> hiçbir reklam düğmesine dokunmazsan reklam gösterilmez (reklam SDK'sı yine de başlar ve yukarıda anlatıldığı gibi bir reklamı hazır tutar).</li><li><strong>Reklam kimliği:</strong> cihaz ayarlarından sıfırlayabilir veya silebilirsin (Android: Ayarlar › Gizlilik › Reklamlar; iOS: Ayarlar › Gizlilik ve Güvenlik › İzleme).</li><li><strong>Reklam onayı (AEA, Birleşik Krallık, İsviçre):</strong> tercihini değiştirmek için reklam gizlilik seçeneklerini (yakında Ayarlar'da) kullan veya onay formunu yeniden görmek için oyunu yeniden yükle.</li><li><strong>Bildirimler:</strong> oyundaki veya cihazındaki Ayarlar.</li><li><strong>Cihazdaki veriler:</strong> Ayarlar'dan ilerlemeni sıfırla veya oyunu kaldır.</li><li><strong>Hakların:</strong> yaşadığın yere göre (örneğin Türkiye'de 6698 sayılı KVKK, AB ve Birleşik Krallık'ta GDPR) verilerine erişmeyi, düzeltilmesini veya silinmesini istemeye, işlenmesine itiraz etmeye ve veri koruma kurumuna (Türkiye'de Kişisel Verileri Koruma Kurulu) şikâyette bulunmaya hakkın vardır. Bize e-posta gönder; 30 gün içinde yanıtlarız.</li></ul>
+<h2 id="tr-delete">Verilerini silme</h2>
+<ol><li>Boxport'ta <strong>Ayarlar › Hakkında</strong> bölümünü aç ve <strong>kurulum kimliğini</strong> (install id) not al. (Sürümün bunu henüz göstermiyorsa bir güncellemeyle gelecek. O zamana kadar cihaz modelini, en son yaklaşık ne zaman oynadığını ve oyun içi gün ile kademeni yaz; kaydını bulmaya çalışırız.)</li><li><strong><a href="mailto:appnify.co@gmail.com">appnify.co@gmail.com</a></strong> adresine "Boxport veri silme" konulu ve kurulum kimliğini içeren bir e-posta gönder. Satın alma kayıtlarının da silinmesini istiyorsan App Store veya Google Play makbuzundaki sipariş numarasını ekle.</li><li>30 gün içinde bulut kaydını ve anonim hesabını sileriz ve eşleştirebildiğimiz satın alma kayıtlarının silinmesini RevenueCat'ten isteriz. Analitik olayları ve çökme raporları kurulum kimliğinle saklanmaz; yukarıdaki sürelerden sonra otomatik olarak silinir.</li></ol>
+<p>Oyunu kaldırmak cihazındaki verileri siler ama bulut kopyasını silmez.</p>
+<h2 id="tr-cocuklar">Çocuklar</h2>
+<p>Boxport 13 yaş ve üzeri oyuncular için tasarlanmıştır ve çocuklara yönelik değildir. 13 yaşından (veya ülkendeki yasanın belirlediği daha yüksek yaştan) küçük çocuklardan bilerek kişisel veri toplamayız. Bir çocuğun oyunu kullandığını düşünüyorsan bize e-posta gönder, bulut kaydını sileriz. Boxport'taki reklamlar aile dostu içerikle sınırlıdır.</p>
+<h2 id="tr-web-onizlemesi">Web önizlemesi</h2>
+<p><a href="https://mykynk.github.io/boxport-play/">mykynk.github.io/boxport-play</a> adresindeki ücretsiz web önizlemesi aynı Firebase analitiğini, anonim hesabı ve bulut kaydını kullanır; bunlar tarayıcının depolama alanında tutulur. Web önizlemesinde reklam ve satın alma yoktur.</p>
+<h2 id="tr-degisiklikler">Değişiklikler</h2>
+<p>Buradaki herhangi bir şey değiştiğinde, bunu gerektiren sürüm yayımlanmadan önce bu sayfayı ve en üstteki tarihi güncelleriz.</p>
+<h2 id="tr-iletisim">İletişim</h2>
+<p>Appnify (AppNify Software) · <strong><a href="mailto:appnify.co@gmail.com">appnify.co@gmail.com</a></strong></p>
+</section>
+
+<footer>Boxport · Appnify (AppNify Software)</footer>
+</main>
+</body>
+</html>
